@@ -1,0 +1,280 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#app {
+  display: flex;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #4169e1;
+  height: 100vh;
+  width: 260px;
+  min-width: 260px;
+  transition: width 0.25s ease-in-out;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 1rem 0; */
+    margin-top: 15px;
+}
+
+.logo-section img {
+    width: 100px;
+    /* margin-bottom: 5px; */
+    transition: filter 0.3s ease;
+}
+
+.logo-section span {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.sidebar-nav {
+  padding: 10px 0;
+  flex: 1;
+}
+
+.sidebar-link {
+  padding: .625rem 1.625rem;
+  color: #ffffff;
+  display: block;
+  white-space: nowrap;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+  font-size: 1.1rem;
+  margin-right: .75rem;
+}
+
+.sidebar-link:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #67759c;
+  border-left: 5px solid #001247;
+}
+
+.sidebar-item.active {
+  border-left: 5px solid #001247;
+  background-color: #67759c;
+}
+
+.sidebar-footer {
+  background-color: #4169e1;
+}
+
+.sidebar-footer a {
+  color: #ffffff;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.sidebar-footer a:hover {
+  background-color: #67759c;
+  border-left: 5px solid #001247;
+}
+
+#submenu {
+    left: calc(100% - 20px);
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    background-color: #4169e1;
+    padding: 10px 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s, visibility 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+.sidebar-item:hover #submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+#submenu li {
+    width: 100%;
+}
+
+#submenu a {
+    color: #ffffff;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#submenu a:hover {
+    border-left: 5px solid #158920;
+    background-color: rgb(70, 132, 67);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 1.5rem;
+  overflow-y: auto;
+  background: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.coc-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.coc {
+  font-style: italic;
+}
+
+.drop-table-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.good-table-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.view-appointment-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.report-form-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.profile-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.mission-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.vision-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.benefits-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.student-list-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.student-report-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.student-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.appointment-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.sardo-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.admin-coc-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.create-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+table{
+  max-width: 100%;
+}
+
+.home-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.gm-container{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.travel-container {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 100px;
+  margin: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
